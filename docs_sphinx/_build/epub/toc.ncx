@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta name="dtb:uid" content="unknown"/>
+    <meta name="dtb:depth" content="2"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>Exemplos Diversos</text>
+  </docTitle>
+  <navMap>    
+    <navPoint id="navPoint1" playOrder="1">
+      <navLabel>
+        <text>Documentação</text>
+      </navLabel>
+      <content src="index.xhtml" />  
+    </navPoint>
+    <navPoint id="navPoint2" playOrder="2">
+      <navLabel>
+        <text>main module</text>
+      </navLabel>
+      <content src="main.xhtml" />  
+      <navPoint id="navPoint3" playOrder="2">
+        <navLabel>
+          <text>main module</text>
+        </navLabel>
+        <content src="main.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint4" playOrder="3">
+        <navLabel>
+          <text>Utilitário de Operações Matemáticas, Texto e Listas</text>
+        </navLabel>
+        <content src="main.xhtml#utilitario-de-operacoes-matematicas-texto-e-listas" />  
+      </navPoint>
+      <navPoint id="navPoint5" playOrder="4">
+        <navLabel>
+          <text>main()</text>
+        </navLabel>
+        <content src="main.xhtml#main.main" />  
+      </navPoint>
+      <navPoint id="navPoint6" playOrder="5">
+        <navLabel>
+          <text>menu()</text>
+        </navLabel>
+        <content src="main.xhtml#main.menu" />  
+      </navPoint>
+      <navPoint id="navPoint7" playOrder="6">
+        <navLabel>
+          <text>menu_lista()</text>
+        </navLabel>
+        <content src="main.xhtml#main.menu_lista" />  
+      </navPoint>
+      <navPoint id="navPoint8" playOrder="7">
+        <navLabel>
+          <text>menu_matematica()</text>
+        </navLabel>
+        <content src="main.xhtml#main.menu_matematica" />  
+      </navPoint>
+      <navPoint id="navPoint9" playOrder="8">
+        <navLabel>
+          <text>menu_texto()</text>
+        </navLabel>
+        <content src="main.xhtml#main.menu_texto" />  
+      </navPoint>
+      <navPoint id="navPoint10" playOrder="9">
+        <navLabel>
+          <text>pedir_lista()</text>
+        </navLabel>
+        <content src="main.xhtml#main.pedir_lista" />  
+      </navPoint>
+      <navPoint id="navPoint11" playOrder="10">
+        <navLabel>
+          <text>pedir_lista_floats()</text>
+        </navLabel>
+        <content src="main.xhtml#main.pedir_lista_floats" />  
+      </navPoint>
+      <navPoint id="navPoint12" playOrder="11">
+        <navLabel>
+          <text>pedir_lista_inteiros()</text>
+        </navLabel>
+        <content src="main.xhtml#main.pedir_lista_inteiros" />  
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint13" playOrder="12">
+      <navLabel>
+        <text>modulo_lista module</text>
+      </navLabel>
+      <content src="modulo_lista.xhtml" />  
+      <navPoint id="navPoint14" playOrder="12">
+        <navLabel>
+          <text>modulo_lista module</text>
+        </navLabel>
+        <content src="modulo_lista.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint15" playOrder="13">
+        <navLabel>
+          <text>agrupar_por_tamanho()</text>
+        </navLabel>
+        <content src="modulo_lista.xhtml#modulo_lista.agrupar_por_tamanho" />  
+      </navPoint>
+      <navPoint id="navPoint16" playOrder="14">
+        <navLabel>
+          <text>calcular_frequencia()</text>
+        </navLabel>
+        <content src="modulo_lista.xhtml#modulo_lista.calcular_frequencia" />  
+      </navPoint>
+      <navPoint id="navPoint17" playOrder="15">
+        <navLabel>
+          <text>filtrar_pares()</text>
+        </navLabel>
+        <content src="modulo_lista.xhtml#modulo_lista.filtrar_pares" />  
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint18" playOrder="16">
+      <navLabel>
+        <text>modulo_matematica module</text>
+      </navLabel>
+      <content src="modulo_matematica.xhtml" />  
+      <navPoint id="navPoint19" playOrder="16">
+        <navLabel>
+          <text>modulo_matematica module</text>
+        </navLabel>
+        <content src="modulo_matematica.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint20" playOrder="17">
+        <navLabel>
+          <text>calcular_desvio_padrao()</text>
+        </navLabel>
+        <content src="modulo_matematica.xhtml#modulo_matematica.calcular_desvio_padrao" />  
+      </navPoint>
+      <navPoint id="navPoint21" playOrder="18">
+        <navLabel>
+          <text>calcular_media_ponderada()</text>
+        </navLabel>
+        <content src="modulo_matematica.xhtml#modulo_matematica.calcular_media_ponderada" />  
+      </navPoint>
+      <navPoint id="navPoint22" playOrder="19">
+        <navLabel>
+          <text>converter_temperatura()</text>
+        </navLabel>
+        <content src="modulo_matematica.xhtml#modulo_matematica.converter_temperatura" />  
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint23" playOrder="20">
+      <navLabel>
+        <text>modulo_texto module</text>
+      </navLabel>
+      <content src="modulo_texto.xhtml" />  
+      <navPoint id="navPoint24" playOrder="20">
+        <navLabel>
+          <text>modulo_texto module</text>
+        </navLabel>
+        <content src="modulo_texto.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint25" playOrder="21">
+        <navLabel>
+          <text>contar_vogais()</text>
+        </navLabel>
+        <content src="modulo_texto.xhtml#modulo_texto.contar_vogais" />  
+      </navPoint>
+      <navPoint id="navPoint26" playOrder="22">
+        <navLabel>
+          <text>criptografar_cesar()</text>
+        </navLabel>
+        <content src="modulo_texto.xhtml#modulo_texto.criptografar_cesar" />  
+      </navPoint>
+      <navPoint id="navPoint27" playOrder="23">
+        <navLabel>
+          <text>gerar_acronimo()</text>
+        </navLabel>
+        <content src="modulo_texto.xhtml#modulo_texto.gerar_acronimo" />  
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>
