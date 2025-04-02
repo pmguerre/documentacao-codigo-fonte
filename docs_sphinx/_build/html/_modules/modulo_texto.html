@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="pt" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>modulo_texto &#8212; Documentação Exemplos Diversos </title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
+    
+    <script src="../_static/documentation_options.js?v=103ffe9a"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=beaedd51"></script>
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Pesquisar" href="../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Índice de Módulos do Python"
+             >módulos</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Documentação Exemplos Diversos </a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Código do módulo</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">modulo_texto</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Código fonte de modulo_texto</h1><div class="highlight"><pre>
+<div class="viewcode-block" id="contar_vogais">
+<a class="viewcode-back" href="../modulo_texto.html#modulo_texto.contar_vogais">[documentos]</a>
+<span></span><span class="k">def</span><span class="w"> </span><span class="nf">contar_vogais</span><span class="p">(</span><span class="n">texto</span><span class="p">):</span>
+    <span class="n">vogais</span> <span class="o">=</span> <span class="s2">&quot;aeiou&quot;</span>
+    <span class="n">quantidade</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">caractere</span> <span class="ow">in</span> <span class="n">texto</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">caractere</span> <span class="ow">in</span> <span class="n">vogais</span><span class="p">:</span>
+            <span class="n">quantidade</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">quantidade</span></div>
+
+
+
+<div class="viewcode-block" id="gerar_acronimo">
+<a class="viewcode-back" href="../modulo_texto.html#modulo_texto.gerar_acronimo">[documentos]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">gerar_acronimo</span><span class="p">(</span><span class="n">texto</span><span class="p">):</span>
+    <span class="n">palavras</span> <span class="o">=</span> <span class="n">texto</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="n">acronimo</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">palavra</span> <span class="ow">in</span> <span class="n">palavras</span><span class="p">:</span>
+        <span class="n">acronimo</span> <span class="o">+=</span> <span class="n">palavra</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">acronimo</span></div>
+
+
+
+<div class="viewcode-block" id="criptografar_cesar">
+<a class="viewcode-back" href="../modulo_texto.html#modulo_texto.criptografar_cesar">[documentos]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">criptografar_cesar</span><span class="p">(</span><span class="n">texto</span><span class="p">,</span> <span class="n">deslocamento</span><span class="p">):</span>
+    <span class="n">resultado</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">caractere</span> <span class="ow">in</span> <span class="n">texto</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">caractere</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span>
+            <span class="n">base</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">caractere</span><span class="o">.</span><span class="n">islower</span><span class="p">()</span> <span class="k">else</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span>
+            <span class="n">novo_caractere</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">((</span><span class="nb">ord</span><span class="p">(</span><span class="n">caractere</span><span class="p">)</span> <span class="o">-</span> <span class="n">base</span> <span class="o">+</span> <span class="n">deslocamento</span><span class="p">)</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="n">base</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">novo_caractere</span> <span class="o">=</span> <span class="n">caractere</span>
+        <span class="n">resultado</span> <span class="o">+=</span> <span class="n">novo_caractere</span>
+    <span class="k">return</span> <span class="n">resultado</span></div>
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    
+    <span class="n">mensagem</span> <span class="o">=</span> <span class="s2">&quot;As armas e os barões assinalados,&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">contar_vogais</span><span class="p">(</span><span class="n">mensagem</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">gerar_acronimo</span><span class="p">(</span><span class="n">mensagem</span><span class="p">))</span>
+    <span class="n">cifrado</span> <span class="o">=</span> <span class="n">criptografar_cesar</span><span class="p">(</span><span class="n">mensagem</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">cifrado</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">criptografar_cesar</span><span class="p">(</span><span class="n">cifrado</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Pesquisa rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             >índice</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Índice de Módulos do Python"
+             >módulos</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Documentação Exemplos Diversos </a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Código do módulo</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">modulo_texto</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Pedro Guerreiro.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    </div>
+  </body>
+</html>

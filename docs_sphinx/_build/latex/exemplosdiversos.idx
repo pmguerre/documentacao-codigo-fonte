@@ -1,0 +1,25 @@
+\indexentry{module@\spxentry{module}!main@\spxentry{main}|hyperpage}{3}
+\indexentry{main@\spxentry{main}!module@\spxentry{module}|hyperpage}{3}
+\indexentry{main() (no módulo main)@\spxentry{main()}\spxextra{no módulo main}|hyperpage}{3}
+\indexentry{menu() (no módulo main)@\spxentry{menu()}\spxextra{no módulo main}|hyperpage}{4}
+\indexentry{menu\_lista() (no módulo main)@\spxentry{menu\_lista()}\spxextra{no módulo main}|hyperpage}{4}
+\indexentry{menu\_matematica() (no módulo main)@\spxentry{menu\_matematica()}\spxextra{no módulo main}|hyperpage}{4}
+\indexentry{menu\_texto() (no módulo main)@\spxentry{menu\_texto()}\spxextra{no módulo main}|hyperpage}{5}
+\indexentry{pedir\_lista() (no módulo main)@\spxentry{pedir\_lista()}\spxextra{no módulo main}|hyperpage}{5}
+\indexentry{pedir\_lista\_floats() (no módulo main)@\spxentry{pedir\_lista\_floats()}\spxextra{no módulo main}|hyperpage}{5}
+\indexentry{pedir\_lista\_inteiros() (no módulo main)@\spxentry{pedir\_lista\_inteiros()}\spxextra{no módulo main}|hyperpage}{6}
+\indexentry{module@\spxentry{module}!modulo\_lista@\spxentry{modulo\_lista}|hyperpage}{7}
+\indexentry{modulo\_lista@\spxentry{modulo\_lista}!module@\spxentry{module}|hyperpage}{7}
+\indexentry{agrupar\_por\_tamanho() (no módulo modulo\_lista)@\spxentry{agrupar\_por\_tamanho()}\spxextra{no módulo modulo\_lista}|hyperpage}{7}
+\indexentry{calcular\_frequencia() (no módulo modulo\_lista)@\spxentry{calcular\_frequencia()}\spxextra{no módulo modulo\_lista}|hyperpage}{7}
+\indexentry{filtrar\_pares() (no módulo modulo\_lista)@\spxentry{filtrar\_pares()}\spxextra{no módulo modulo\_lista}|hyperpage}{7}
+\indexentry{module@\spxentry{module}!modulo\_matematica@\spxentry{modulo\_matematica}|hyperpage}{9}
+\indexentry{modulo\_matematica@\spxentry{modulo\_matematica}!module@\spxentry{module}|hyperpage}{9}
+\indexentry{calcular\_desvio\_padrao() (no módulo modulo\_matematica)@\spxentry{calcular\_desvio\_padrao()}\spxextra{no módulo modulo\_matematica}|hyperpage}{9}
+\indexentry{calcular\_media\_ponderada() (no módulo modulo\_matematica)@\spxentry{calcular\_media\_ponderada()}\spxextra{no módulo modulo\_matematica}|hyperpage}{9}
+\indexentry{converter\_temperatura() (no módulo modulo\_matematica)@\spxentry{converter\_temperatura()}\spxextra{no módulo modulo\_matematica}|hyperpage}{9}
+\indexentry{module@\spxentry{module}!modulo\_texto@\spxentry{modulo\_texto}|hyperpage}{11}
+\indexentry{modulo\_texto@\spxentry{modulo\_texto}!module@\spxentry{module}|hyperpage}{11}
+\indexentry{contar\_vogais() (no módulo modulo\_texto)@\spxentry{contar\_vogais()}\spxextra{no módulo modulo\_texto}|hyperpage}{11}
+\indexentry{criptografar\_cesar() (no módulo modulo\_texto)@\spxentry{criptografar\_cesar()}\spxextra{no módulo modulo\_texto}|hyperpage}{11}
+\indexentry{gerar\_acronimo() (no módulo modulo\_texto)@\spxentry{gerar\_acronimo()}\spxextra{no módulo modulo\_texto}|hyperpage}{11}

@@ -1,0 +1,7 @@
+\babel@toc {portuges}{}\relax 
+\contentsline {chapter}{\numberline {1}main module}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Utilitário de Operações Matemáticas, Texto e Listas}{3}{section.1.1}%
+\contentsline {chapter}{\numberline {2}modulo\_lista module}{7}{chapter.2}%
+\contentsline {chapter}{\numberline {3}modulo\_matematica module}{9}{chapter.3}%
+\contentsline {chapter}{\numberline {4}modulo\_texto module}{11}{chapter.4}%
+\contentsline {chapter}{Índice de Módulos do Python}{13}{section*.20}%

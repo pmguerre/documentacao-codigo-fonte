@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="pt" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>modulo_lista &#8212; Documentação Exemplos Diversos </title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
+    
+    <script src="../_static/documentation_options.js?v=103ffe9a"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=beaedd51"></script>
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Pesquisar" href="../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Índice de Módulos do Python"
+             >módulos</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Documentação Exemplos Diversos </a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Código do módulo</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">modulo_lista</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Código fonte de modulo_lista</h1><div class="highlight"><pre>
+<div class="viewcode-block" id="filtrar_pares">
+<a class="viewcode-back" href="../modulo_lista.html#modulo_lista.filtrar_pares">[documentos]</a>
+<span></span><span class="k">def</span><span class="w"> </span><span class="nf">filtrar_pares</span><span class="p">(</span><span class="n">lista_numeros</span><span class="p">):</span>
+    <span class="n">numeros</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="n">lista_numeros</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">numero</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">numeros</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">numeros</span></div>
+
+
+
+<div class="viewcode-block" id="calcular_frequencia">
+<a class="viewcode-back" href="../modulo_lista.html#modulo_lista.calcular_frequencia">[documentos]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">calcular_frequencia</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
+    <span class="n">frequencia</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
+        <span class="n">frequencia</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="n">frequencia</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">frequencia</span></div>
+
+
+
+<div class="viewcode-block" id="agrupar_por_tamanho">
+<a class="viewcode-back" href="../modulo_lista.html#modulo_lista.agrupar_por_tamanho">[documentos]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">agrupar_por_tamanho</span><span class="p">(</span><span class="n">lista_strings</span><span class="p">):</span>
+    <span class="n">agrupado</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">string</span> <span class="ow">in</span> <span class="n">lista_strings</span><span class="p">:</span>
+        <span class="n">tamanho</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">tamanho</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">agrupado</span><span class="p">:</span>
+            <span class="n">agrupado</span><span class="p">[</span><span class="n">tamanho</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">agrupado</span><span class="p">[</span><span class="n">tamanho</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">agrupado</span></div>
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    
+    <span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+    <span class="n">strings</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ola&#39;</span><span class="p">,</span> <span class="s1">&#39;mundo&#39;</span><span class="p">,</span> <span class="s1">&#39;maria&#39;</span><span class="p">,</span> <span class="s1">&#39;xutos&#39;</span><span class="p">,</span> <span class="s1">&#39;colaboração&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;xutos&#39;</span><span class="p">]</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="n">filtrar_pares</span><span class="p">(</span><span class="n">numeros</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">calcular_frequencia</span><span class="p">(</span><span class="n">numeros</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">calcular_frequencia</span><span class="p">(</span><span class="n">strings</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">agrupar_por_tamanho</span><span class="p">(</span><span class="n">strings</span><span class="p">))</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Pesquisa rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             >índice</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Índice de Módulos do Python"
+             >módulos</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Documentação Exemplos Diversos </a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Código do módulo</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">modulo_lista</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Pedro Guerreiro.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="pt" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>main module &#8212; Documentação Exemplos Diversos </title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=279e0f84" />
+    <script src="_static/documentation_options.js?v=103ffe9a"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=beaedd51"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Pesquisar" href="search.html" />
+    <link rel="next" title="modulo_lista module" href="modulo_lista.html" />
+    <link rel="prev" title="Documentação" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Índice Geral"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Índice de Módulos do Python"
+             >módulos</a> |</li>
+        <li class="right" >
+          <a href="modulo_lista.html" title="modulo_lista module"
+             accesskey="N">próximo</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Documentação"
+             accesskey="P">anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Documentação Exemplos Diversos </a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">main module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-main">
+<span id="main-module"></span><h1>main module<a class="headerlink" href="#module-main" title="Link to this heading">¶</a></h1>
+<section id="utilitario-de-operacoes-matematicas-texto-e-listas">
+<h2>Utilitário de Operações Matemáticas, Texto e Listas<a class="headerlink" href="#utilitario-de-operacoes-matematicas-texto-e-listas" title="Link to this heading">¶</a></h2>
+<p>Este módulo contém o programa principal que oferece um menu interativo
+para executar diversas operações em matemática, manipulação de texto e
+operações com listas.</p>
+<p>O programa apresenta um menu principal e submenus que permitem ao
+utilizador selecionar diferentes funcionalidades implementadas nos
+módulos importados.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Este programa é um exemplo de como organizar um código Python
+em modulos, permitindo a reutilização de funções em diferentes
+contextos.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Aviso</p>
+<p>Este código é apenas um exemplo e não deve ser utilizado em
+produção sem as devidas validações e tratamento de exceções.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Autor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Pedro Guerreiro</p>
+</dd>
+<dt class="field-even">Data<span class="colon">:</span></dt>
+<dd class="field-even"><p>1 de abril de 2025</p>
+</dd>
+<dt class="field-odd">Versão<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1.0</p>
+</dd>
+</dl>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="main.main">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#main"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#main.main" title="Link to this definition">¶</a></dt>
+<dd><p>Função principal que controla o fluxo do programa.</p>
+<p>Esta função apresenta o menu principal e direciona para os submenus
+baseando-se na escolha do utilizador. Executa as operações
+solicitadas chamando as funções dos módulos importados com os
+parâmetros apropriados.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Retorno<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Tipo de retorno<span class="colon">:</span></dt>
+<dd class="field-even"><p>NoneType</p>
+</dd>
+</dl>
+<p>Por exemplo:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">main</span><span class="p">()</span>
+<span class="go"># Inicia o programa interativo com menus</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.menu">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">menu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#menu"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#main.menu" title="Link to this definition">¶</a></dt>
+<dd><p>Apresenta o menu principal e processa a escolha do utilizador.</p>
+<p>A função exibe as opções disponíveis e valida se a escolha está
+dentro do intervalo permitido.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Retorno<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Número inteiro correspondente à opção escolhida</p>
+</dd>
+<dt class="field-even">Tipo de retorno<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+<p>Por exemplo:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">menu</span><span class="p">()</span>
+<span class="go">Escolha uma opção:</span>
+<span class="go">1. Operações Matemáticas</span>
+<span class="go">2. Operações com Texto</span>
+<span class="go">3. Operações com Listas</span>
+<span class="go">4. Sair</span>
+<span class="go">Digite a opção desejada: 1</span>
+<span class="go">1</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.menu_lista">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">menu_lista</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#menu_lista"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#main.menu_lista" title="Link to this definition">¶</a></dt>
+<dd><p>Apresenta o submenu de operações com listas e processa a escolha.</p>
+<p>A função exibe as operações de lista disponíveis e valida se
+a escolha está dentro do intervalo permitido.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Retorno<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Número inteiro correspondente à opção escolhida</p>
+</dd>
+<dt class="field-even">Tipo de retorno<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+<p>Por exemplo:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">menu_lista</span><span class="p">()</span>
+<span class="go">Operações com Listas:</span>
+<span class="go">1. Filtrar Pares</span>
+<span class="go">2. Calcular Frequência</span>
+<span class="go">3. Agrupar por Tamanho</span>
+<span class="go">Digite a opção desejada: 1</span>
+<span class="go">1</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.menu_matematica">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">menu_matematica</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#menu_matematica"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#main.menu_matematica" title="Link to this definition">¶</a></dt>
+<dd><p>Apresenta o submenu de operações matemáticas e processa a escolha.</p>
+<p>A função exibe as operações matemáticas disponíveis e valida se
+a escolha está dentro do intervalo permitido.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Retorno<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Número inteiro correspondente à opção escolhida</p>
+</dd>
+<dt class="field-even">Tipo de retorno<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+<p>Por exemplo:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">menu_matematica</span><span class="p">()</span>
+<span class="go">Operações Matemáticas:</span>
+<span class="go">1. Média Ponderada</span>
+<span class="go">2. Desvio Padrão</span>
+<span class="go">3. Conversão de Temperatura</span>
+<span class="go">Digite a opção desejada: 1</span>
+<span class="go">1</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.menu_texto">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">menu_texto</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#menu_texto"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#main.menu_texto" title="Link to this definition">¶</a></dt>
+<dd><p>Apresenta o submenu de operações com texto e processa a escolha.</p>
+<p>A função exibe as operações de texto disponíveis e valida se
+a escolha está dentro do intervalo permitido.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Retorno<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Número inteiro correspondente à opção escolhida</p>
+</dd>
+<dt class="field-even">Tipo de retorno<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+<p>Por exemplo:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">menu_texto</span><span class="p">()</span>
+<span class="go">Operações com Texto:</span>
+<span class="go">1. Contar Vogais</span>
+<span class="go">2. Gerar Acrônimo</span>
+<span class="go">3. Criptografia César</span>
+<span class="go">Digite a opção desejada: 2</span>
+<span class="go">2</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.pedir_lista">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">pedir_lista</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mensagem</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#pedir_lista"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#main.pedir_lista" title="Link to this definition">¶</a></dt>
+<dd><p>Solicita ao utilizador uma lista de strings.</p>
+<p>A função apresenta uma mensagem ao utilizador e espera que este
+insira uma sequência de valores separados por vírgula.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mensagem</strong> (<em>str</em>) – Texto a apresentar ao utilizador para solicitar a entrada</p>
+</dd>
+<dt class="field-even">Retorno<span class="colon">:</span></dt>
+<dd class="field-even"><p>Lista de strings inseridas pelo utilizador</p>
+</dd>
+<dt class="field-odd">Tipo de retorno<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[str]</p>
+</dd>
+</dl>
+<p>Por exemplo:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pedir_lista</span><span class="p">(</span><span class="s2">&quot;Digite palavras: &quot;</span><span class="p">)</span>
+<span class="go">Digite palavras: olá,mundo,python</span>
+<span class="go">[&#39;olá&#39;, &#39;mundo&#39;, &#39;python&#39;]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.pedir_lista_floats">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">pedir_lista_floats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mensagem</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#pedir_lista_floats"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#main.pedir_lista_floats" title="Link to this definition">¶</a></dt>
+<dd><p>Solicita ao utilizador uma lista de números decimais.</p>
+<p>A função apresenta uma mensagem ao utilizador e espera que este
+insira uma sequência de números separados por vírgula. Cada valor
+é convertido para float.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mensagem</strong> (<em>str</em>) – Texto a apresentar ao utilizador para solicitar a entrada</p>
+</dd>
+<dt class="field-even">Retorno<span class="colon">:</span></dt>
+<dd class="field-even"><p>Lista de números decimais inseridos pelo utilizador</p>
+</dd>
+<dt class="field-odd">Tipo de retorno<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[float]</p>
+</dd>
+<dt class="field-even">Levanta<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – Se algum dos valores inseridos não puder ser
+convertido para float</p>
+</dd>
+</dl>
+<p>Por exemplo:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pedir_lista_floats</span><span class="p">(</span><span class="s2">&quot;Digite valores: &quot;</span><span class="p">)</span>
+<span class="go">Digite valores: 1.5,2.7,3.9</span>
+<span class="go">[1.5, 2.7, 3.9]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.pedir_lista_inteiros">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">pedir_lista_inteiros</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mensagem</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#pedir_lista_inteiros"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#main.pedir_lista_inteiros" title="Link to this definition">¶</a></dt>
+<dd><p>Solicita ao utilizador uma lista de números inteiros.</p>
+<p>A função apresenta uma mensagem ao utilizador e espera que este
+insira uma sequência de números separados por vírgula. Cada valor
+é convertido para int.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mensagem</strong> (<em>str</em>) – Texto a apresentar ao utilizador para solicitar a entrada</p>
+</dd>
+<dt class="field-even">Retorno<span class="colon">:</span></dt>
+<dd class="field-even"><p>Lista de números inteiros inseridos pelo utilizador</p>
+</dd>
+<dt class="field-odd">Tipo de retorno<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[int]</p>
+</dd>
+<dt class="field-even">Levanta<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – Se algum dos valores inseridos não puder ser
+convertido para int</p>
+</dd>
+</dl>
+<p>Por exemplo:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pedir_lista_inteiros</span><span class="p">(</span><span class="s2">&quot;Digite valores: &quot;</span><span class="p">)</span>
+<span class="go">Digite valores: 1,2,3</span>
+<span class="go">[1, 2, 3]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">main module</a><ul>
+<li><a class="reference internal" href="#utilitario-de-operacoes-matematicas-texto-e-listas">Utilitário de Operações Matemáticas, Texto e Listas</a></li>
+<li><a class="reference internal" href="#main.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li><a class="reference internal" href="#main.menu"><code class="docutils literal notranslate"><span class="pre">menu()</span></code></a></li>
+<li><a class="reference internal" href="#main.menu_lista"><code class="docutils literal notranslate"><span class="pre">menu_lista()</span></code></a></li>
+<li><a class="reference internal" href="#main.menu_matematica"><code class="docutils literal notranslate"><span class="pre">menu_matematica()</span></code></a></li>
+<li><a class="reference internal" href="#main.menu_texto"><code class="docutils literal notranslate"><span class="pre">menu_texto()</span></code></a></li>
+<li><a class="reference internal" href="#main.pedir_lista"><code class="docutils literal notranslate"><span class="pre">pedir_lista()</span></code></a></li>
+<li><a class="reference internal" href="#main.pedir_lista_floats"><code class="docutils literal notranslate"><span class="pre">pedir_lista_floats()</span></code></a></li>
+<li><a class="reference internal" href="#main.pedir_lista_inteiros"><code class="docutils literal notranslate"><span class="pre">pedir_lista_inteiros()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Tópico anterior</h4>
+    <p class="topless"><a href="index.html"
+                          title="capítulo anterior">Documentação</a></p>
+  </div>
+  <div>
+    <h4>Próximo tópico</h4>
+    <p class="topless"><a href="modulo_lista.html"
+                          title="próximo capítulo">modulo_lista module</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Esta Página</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/main.rst.txt"
+            rel="nofollow">Exibir Fonte</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Pesquisa rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Índice Geral"
+             >índice</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Índice de Módulos do Python"
+             >módulos</a> |</li>
+        <li class="right" >
+          <a href="modulo_lista.html" title="modulo_lista module"
+             >próximo</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Documentação"
+             >anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Documentação Exemplos Diversos </a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">main module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Pedro Guerreiro.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    </div>
+  </body>
+</html>

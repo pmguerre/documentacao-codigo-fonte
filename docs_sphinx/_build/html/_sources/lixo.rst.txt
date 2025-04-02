@@ -1,0 +1,7 @@
+lixo module
+===========
+
+.. automodule:: lixo
+   :members:
+   :show-inheritance:
+   :undoc-members:
