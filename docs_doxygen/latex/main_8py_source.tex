@@ -1,0 +1,316 @@
+\doxysection{main.\+py}
+\hypertarget{main_8py_source}{}\label{main_8py_source}\index{C:/Users/pmguerre/src/documentar/src/main.py@{C:/Users/pmguerre/src/documentar/src/main.py}}
+\mbox{\hyperlink{main_8py}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00001}\mbox{\hyperlink{namespacemain}{00001}}\ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00002}00002\ \textcolor{stringliteral}{Utilitário\ de\ Operações\ Matemáticas,\ Texto\ e\ Listas}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00003}00003\ \textcolor{stringliteral}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00004}00004\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00005}00005\ \textcolor{stringliteral}{Este\ módulo\ contém\ o\ programa\ principal\ que\ oferece\ um\ menu\ interativo}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00006}00006\ \textcolor{stringliteral}{para\ executar\ diversas\ operações\ em\ matemática,\ manipulação\ de\ texto\ e}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00007}00007\ \textcolor{stringliteral}{operações\ com\ listas.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00008}00008\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00009}00009\ \textcolor{stringliteral}{O\ programa\ apresenta\ um\ menu\ principal\ e\ submenus\ que\ permitem\ ao}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00010}00010\ \textcolor{stringliteral}{utilizador\ selecionar\ diferentes\ funcionalidades\ implementadas\ nos}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00011}00011\ \textcolor{stringliteral}{módulos\ importados.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00012}00012\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00013}00013\ \textcolor{stringliteral}{:Autor:\ Pedro\ Guerreiro}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00014}00014\ \textcolor{stringliteral}{:Data:\ 1\ de\ abril\ de\ 2025}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00015}00015\ \textcolor{stringliteral}{:Versão:\ 1.0}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00016}00016\ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00018}00018\ \textcolor{keyword}{import}\ modulo\_lista}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00019}00019\ \textcolor{keyword}{import}\ modulo\_matematica}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00020}00020\ \textcolor{keyword}{import}\ modulo\_texto}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00023}\mbox{\hyperlink{namespacemain_a096b9079a98ca5cdac266d8acb5930e3}{00023}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemain_a096b9079a98ca5cdac266d8acb5930e3}{pedir\_lista\_floats}}(mensagem):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00024}00024\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00025}00025\ \textcolor{stringliteral}{\ \ \ \ Solicita\ ao\ utilizador\ uma\ lista\ de\ números\ decimais.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00026}00026\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00027}00027\ \textcolor{stringliteral}{\ \ \ \ A\ função\ apresenta\ uma\ mensagem\ ao\ utilizador\ e\ espera\ que\ este}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00028}00028\ \textcolor{stringliteral}{\ \ \ \ insira\ uma\ sequência\ de\ números\ separados\ por\ vírgula.\ Cada\ valor}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00029}00029\ \textcolor{stringliteral}{\ \ \ \ é\ convertido\ para\ float.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00030}00030\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00031}00031\ \textcolor{stringliteral}{\ \ \ \ :param\ mensagem:\ Texto\ a\ apresentar\ ao\ utilizador\ para\ solicitar\ a\ entrada}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00032}00032\ \textcolor{stringliteral}{\ \ \ \ :type\ mensagem:\ str}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00033}00033\ \textcolor{stringliteral}{\ \ \ \ :return:\ Lista\ de\ números\ decimais\ inseridos\ pelo\ utilizador}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00034}00034\ \textcolor{stringliteral}{\ \ \ \ :rtype:\ list[float]}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00035}00035\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00036}00036\ \textcolor{stringliteral}{\ \ \ \ :raise\ ValueError:\ Se\ algum\ dos\ valores\ inseridos\ não\ puder\ ser}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00037}00037\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ convertido\ para\ float}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00038}00038\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00039}00039\ \textcolor{stringliteral}{\ \ \ \ exemplo}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00040}00040\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00041}00041\ \textcolor{stringliteral}{\ \ \ \ >>>\ pedir\_lista\_floats("{}Digite\ valores:\ "{})}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00042}00042\ \textcolor{stringliteral}{\ \ \ \ Digite\ valores:\ 1.5,2.7,3.9}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00043}00043\ \textcolor{stringliteral}{\ \ \ \ [1.5,\ 2.7,\ 3.9]}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00044}00044\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00045}00045\ \ \ \ \ valores\ =\ input(mensagem)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00046}00046\ \ \ \ \ lista\ =\ []}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00047}00047\ \ \ \ \ \textcolor{keywordflow}{for}\ valor\ \textcolor{keywordflow}{in}\ valores.split(\textcolor{stringliteral}{"{},"{}}):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00048}00048\ \ \ \ \ \ \ \ \ lista.append(float(valor))}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00049}00049\ \ \ \ \ \textcolor{keywordflow}{return}\ lista}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00052}\mbox{\hyperlink{namespacemain_a7cbc578a29c881ec101cc6d95992861f}{00052}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemain_a7cbc578a29c881ec101cc6d95992861f}{pedir\_lista\_inteiros}}(mensagem):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00053}00053\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00054}00054\ \textcolor{stringliteral}{\ \ \ \ Solicita\ ao\ utilizador\ uma\ lista\ de\ números\ inteiros.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00055}00055\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00056}00056\ \textcolor{stringliteral}{\ \ \ \ A\ função\ apresenta\ uma\ mensagem\ ao\ utilizador\ e\ espera\ que\ este}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00057}00057\ \textcolor{stringliteral}{\ \ \ \ insira\ uma\ sequência\ de\ números\ separados\ por\ vírgula.\ Cada\ valor}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00058}00058\ \textcolor{stringliteral}{\ \ \ \ é\ convertido\ para\ int.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00059}00059\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00060}00060\ \textcolor{stringliteral}{\ \ \ \ :param\ mensagem:\ Texto\ a\ apresentar\ ao\ utilizador\ para\ solicitar\ a\ entrada}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00061}00061\ \textcolor{stringliteral}{\ \ \ \ :type\ mensagem:\ str}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00062}00062\ \textcolor{stringliteral}{\ \ \ \ :return:\ Lista\ de\ números\ inteiros\ inseridos\ pelo\ utilizador}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00063}00063\ \textcolor{stringliteral}{\ \ \ \ :rtype:\ list[int]}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00064}00064\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00065}00065\ \textcolor{stringliteral}{\ \ \ \ :raises\ ValueError:\ Se\ algum\ dos\ valores\ inseridos\ não\ puder\ ser}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00066}00066\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ convertido\ para\ int}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00067}00067\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00068}00068\ \textcolor{stringliteral}{\ \ \ \ :exemplo:}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00069}00069\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00070}00070\ \textcolor{stringliteral}{\ \ \ \ >>>\ pedir\_lista\_inteiros("{}Digite\ valores:\ "{})}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00071}00071\ \textcolor{stringliteral}{\ \ \ \ Digite\ valores:\ 1,2,3}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00072}00072\ \textcolor{stringliteral}{\ \ \ \ [1,\ 2,\ 3]}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00073}00073\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00074}00074\ \ \ \ \ valores\ =\ input(mensagem)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00075}00075\ \ \ \ \ lista\ =\ []}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00076}00076\ \ \ \ \ \textcolor{keywordflow}{for}\ valor\ \textcolor{keywordflow}{in}\ valores.split(\textcolor{stringliteral}{"{},"{}}):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00077}00077\ \ \ \ \ \ \ \ \ lista.append(int(valor))}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00078}00078\ \ \ \ \ \textcolor{keywordflow}{return}\ lista}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00081}\mbox{\hyperlink{namespacemain_a9b32af4b3d241a47dfc5e6fdaf2fccfd}{00081}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemain_a9b32af4b3d241a47dfc5e6fdaf2fccfd}{pedir\_lista}}(mensagem):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00082}00082\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00083}00083\ \textcolor{stringliteral}{\ \ \ \ Solicita\ ao\ utilizador\ uma\ lista\ de\ strings.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00084}00084\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00085}00085\ \textcolor{stringliteral}{\ \ \ \ A\ função\ apresenta\ uma\ mensagem\ ao\ utilizador\ e\ espera\ que\ este}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00086}00086\ \textcolor{stringliteral}{\ \ \ \ insira\ uma\ sequência\ de\ valores\ separados\ por\ vírgula.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00087}00087\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00088}00088\ \textcolor{stringliteral}{\ \ \ \ :param\ mensagem:\ Texto\ a\ apresentar\ ao\ utilizador\ para\ solicitar\ a\ entrada}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00089}00089\ \textcolor{stringliteral}{\ \ \ \ :type\ mensagem:\ str}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00090}00090\ \textcolor{stringliteral}{\ \ \ \ :return:\ Lista\ de\ strings\ inseridas\ pelo\ utilizador}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00091}00091\ \textcolor{stringliteral}{\ \ \ \ :rtype:\ list[str]}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00092}00092\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00093}00093\ \textcolor{stringliteral}{\ \ \ \ :exemplo:}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00094}00094\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00095}00095\ \textcolor{stringliteral}{\ \ \ \ >>>\ pedir\_lista("{}Digite\ palavras:\ "{})}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00096}00096\ \textcolor{stringliteral}{\ \ \ \ Digite\ palavras:\ olá,mundo,python}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00097}00097\ \textcolor{stringliteral}{\ \ \ \ ['olá',\ 'mundo',\ 'python']}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00098}00098\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00099}00099\ \ \ \ \ valores\ =\ input(mensagem)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00100}00100\ \ \ \ \ lista\ =\ []}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00101}00101\ \ \ \ \ \textcolor{keywordflow}{for}\ valor\ \textcolor{keywordflow}{in}\ valores.split(\textcolor{stringliteral}{"{},"{}}):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00102}00102\ \ \ \ \ \ \ \ \ lista.append(valor)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00103}00103\ \ \ \ \ \textcolor{keywordflow}{return}\ lista}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00106}\mbox{\hyperlink{namespacemain_a212a22164b22943139210e6170ace6d3}{00106}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemain_a212a22164b22943139210e6170ace6d3}{menu}}():}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00107}00107\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00108}00108\ \textcolor{stringliteral}{\ \ \ \ Apresenta\ o\ menu\ principal\ e\ processa\ a\ escolha\ do\ utilizador.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00109}00109\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00110}00110\ \textcolor{stringliteral}{\ \ \ \ A\ função\ exibe\ as\ opções\ disponíveis\ e\ valida\ se\ a\ escolha\ está}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00111}00111\ \textcolor{stringliteral}{\ \ \ \ dentro\ do\ intervalo\ permitido.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00112}00112\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00113}00113\ \textcolor{stringliteral}{\ \ \ \ :return:\ Número\ inteiro\ correspondente\ à\ opção\ escolhida}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00114}00114\ \textcolor{stringliteral}{\ \ \ \ :rtype:\ int}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00115}00115\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00116}00116\ \textcolor{stringliteral}{\ \ \ \ :exemplo:}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00117}00117\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00118}00118\ \textcolor{stringliteral}{\ \ \ \ >>>\ menu()}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00119}00119\ \textcolor{stringliteral}{\ \ \ \ Escolha\ uma\ opção:}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00120}00120\ \textcolor{stringliteral}{\ \ \ \ 1.\ Operações\ Matemáticas}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00121}00121\ \textcolor{stringliteral}{\ \ \ \ 2.\ Operações\ com\ Texto}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00122}00122\ \textcolor{stringliteral}{\ \ \ \ 3.\ Operações\ com\ Listas}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00123}00123\ \textcolor{stringliteral}{\ \ \ \ 4.\ Sair}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00124}00124\ \textcolor{stringliteral}{\ \ \ \ Digite\ a\ opção\ desejada:\ 1}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00125}00125\ \textcolor{stringliteral}{\ \ \ \ 1}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00126}00126\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00127}00127\ \ \ \ \ \textcolor{keywordflow}{while}\ \textcolor{keyword}{True}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00128}00128\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}Escolha\ uma\ opção:"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00129}00129\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}1.\ Operações\ Matemáticas"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00130}00130\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}2.\ Operações\ com\ Texto"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00131}00131\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}3.\ Operações\ com\ Listas"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00132}00132\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}4.\ Sair"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00133}00133\ \ \ \ \ \ \ \ \ opcao\ =\ input(\textcolor{stringliteral}{"{}Digite\ a\ opção\ desejada:\ "{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00134}00134\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ opcao\ <\ \textcolor{stringliteral}{"{}1"{}}\ \textcolor{keywordflow}{or}\ opcao\ >\ \textcolor{stringliteral}{"{}4"{}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00135}00135\ \ \ \ \ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}Opção\ inválida.\ Tente\ novamente.\(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00136}00136\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00137}00137\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ int(opcao)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00138}00138\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00139}00139\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00140}\mbox{\hyperlink{namespacemain_afe65d6f57fd28ee12974ab42a5391216}{00140}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemain_afe65d6f57fd28ee12974ab42a5391216}{menu\_matematica}}():}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00141}00141\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00142}00142\ \textcolor{stringliteral}{\ \ \ \ Apresenta\ o\ submenu\ de\ operações\ matemáticas\ e\ processa\ a\ escolha.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00143}00143\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00144}00144\ \textcolor{stringliteral}{\ \ \ \ A\ função\ exibe\ as\ operações\ matemáticas\ disponíveis\ e\ valida\ se}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00145}00145\ \textcolor{stringliteral}{\ \ \ \ a\ escolha\ está\ dentro\ do\ intervalo\ permitido.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00146}00146\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00147}00147\ \textcolor{stringliteral}{\ \ \ \ :return:\ Número\ inteiro\ correspondente\ à\ opção\ escolhida}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00148}00148\ \textcolor{stringliteral}{\ \ \ \ :rtype:\ int}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00149}00149\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00150}00150\ \textcolor{stringliteral}{\ \ \ \ :exemplo:}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00151}00151\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00152}00152\ \textcolor{stringliteral}{\ \ \ \ >>>\ menu\_matematica()}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00153}00153\ \textcolor{stringliteral}{\ \ \ \ Operações\ Matemáticas:}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00154}00154\ \textcolor{stringliteral}{\ \ \ \ 1.\ Média\ Ponderada}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00155}00155\ \textcolor{stringliteral}{\ \ \ \ 2.\ Desvio\ Padrão}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00156}00156\ \textcolor{stringliteral}{\ \ \ \ 3.\ Conversão\ de\ Temperatura}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00157}00157\ \textcolor{stringliteral}{\ \ \ \ Digite\ a\ opção\ desejada:\ 1}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00158}00158\ \textcolor{stringliteral}{\ \ \ \ 1}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00159}00159\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00160}00160\ \ \ \ \ \textcolor{keywordflow}{while}\ \textcolor{keyword}{True}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00161}00161\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}Operações\ Matemáticas:"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00162}00162\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}1.\ Média\ Ponderada"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00163}00163\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}2.\ Desvio\ Padrão"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00164}00164\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}3.\ Conversão\ de\ Temperatura"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00165}00165\ \ \ \ \ \ \ \ \ opcao\ =\ input(\textcolor{stringliteral}{"{}Digite\ a\ opção\ desejada:\ "{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00166}00166\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ opcao\ <\ \textcolor{stringliteral}{"{}1"{}}\ \textcolor{keywordflow}{or}\ opcao\ >\ \textcolor{stringliteral}{"{}3"{}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00167}00167\ \ \ \ \ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}Opção\ inválida.\ Tente\ novamente.\(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00168}00168\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00169}00169\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ int(opcao)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00170}00170\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00171}00171\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00172}\mbox{\hyperlink{namespacemain_afe4f0664a9a82298827d05277c3bd478}{00172}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemain_afe4f0664a9a82298827d05277c3bd478}{menu\_texto}}():}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00173}00173\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00174}00174\ \textcolor{stringliteral}{\ \ \ \ Apresenta\ o\ submenu\ de\ operações\ com\ texto\ e\ processa\ a\ escolha.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00175}00175\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00176}00176\ \textcolor{stringliteral}{\ \ \ \ A\ função\ exibe\ as\ operações\ de\ texto\ disponíveis\ e\ valida\ se}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00177}00177\ \textcolor{stringliteral}{\ \ \ \ a\ escolha\ está\ dentro\ do\ intervalo\ permitido.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00178}00178\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00179}00179\ \textcolor{stringliteral}{\ \ \ \ :return:\ Número\ inteiro\ correspondente\ à\ opção\ escolhida}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00180}00180\ \textcolor{stringliteral}{\ \ \ \ :rtype:\ int}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00181}00181\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00182}00182\ \textcolor{stringliteral}{\ \ \ \ :exemplo:}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00183}00183\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00184}00184\ \textcolor{stringliteral}{\ \ \ \ >>>\ menu\_texto()}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00185}00185\ \textcolor{stringliteral}{\ \ \ \ Operações\ com\ Texto:}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00186}00186\ \textcolor{stringliteral}{\ \ \ \ 1.\ Contar\ Vogais}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00187}00187\ \textcolor{stringliteral}{\ \ \ \ 2.\ Gerar\ Acrônimo}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00188}00188\ \textcolor{stringliteral}{\ \ \ \ 3.\ Criptografia\ César}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00189}00189\ \textcolor{stringliteral}{\ \ \ \ Digite\ a\ opção\ desejada:\ 2}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00190}00190\ \textcolor{stringliteral}{\ \ \ \ 2}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00191}00191\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00192}00192\ \ \ \ \ \textcolor{keywordflow}{while}\ \textcolor{keyword}{True}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00193}00193\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}Operações\ com\ Texto:"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00194}00194\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}1.\ Contar\ Vogais"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00195}00195\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}2.\ Gerar\ Acrônimo"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00196}00196\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}3.\ Criptografia\ César"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00197}00197\ \ \ \ \ \ \ \ \ opcao\ =\ input(\textcolor{stringliteral}{"{}Digite\ a\ opção\ desejada:\ "{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00198}00198\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ opcao\ <\ \textcolor{stringliteral}{"{}1"{}}\ \textcolor{keywordflow}{or}\ opcao\ >\ \textcolor{stringliteral}{"{}3"{}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00199}00199\ \ \ \ \ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}Opção\ inválida.\ Tente\ novamente.\(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00200}00200\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00201}00201\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ int(opcao)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00202}00202\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00203}00203\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00204}\mbox{\hyperlink{namespacemain_ad054726c7900430f5135b3e811943cff}{00204}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemain_ad054726c7900430f5135b3e811943cff}{menu\_lista}}():}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00205}00205\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00206}00206\ \textcolor{stringliteral}{\ \ \ \ Apresenta\ o\ submenu\ de\ operações\ com\ listas\ e\ processa\ a\ escolha.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00207}00207\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00208}00208\ \textcolor{stringliteral}{\ \ \ \ A\ função\ exibe\ as\ operações\ de\ lista\ disponíveis\ e\ valida\ se}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00209}00209\ \textcolor{stringliteral}{\ \ \ \ a\ escolha\ está\ dentro\ do\ intervalo\ permitido.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00210}00210\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00211}00211\ \textcolor{stringliteral}{\ \ \ \ :return:\ Número\ inteiro\ correspondente\ à\ opção\ escolhida}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00212}00212\ \textcolor{stringliteral}{\ \ \ \ :rtype:\ int}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00213}00213\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00214}00214\ \textcolor{stringliteral}{\ \ \ \ :exemplo:}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00215}00215\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00216}00216\ \textcolor{stringliteral}{\ \ \ \ >>>\ menu\_lista()}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00217}00217\ \textcolor{stringliteral}{\ \ \ \ Operações\ com\ Listas:}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00218}00218\ \textcolor{stringliteral}{\ \ \ \ 1.\ Filtrar\ Pares}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00219}00219\ \textcolor{stringliteral}{\ \ \ \ 2.\ Calcular\ Frequência}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00220}00220\ \textcolor{stringliteral}{\ \ \ \ 3.\ Agrupar\ por\ Tamanho}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00221}00221\ \textcolor{stringliteral}{\ \ \ \ Digite\ a\ opção\ desejada:\ 1}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00222}00222\ \textcolor{stringliteral}{\ \ \ \ 1}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00223}00223\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00224}00224\ \ \ \ \ \textcolor{keywordflow}{while}\ \textcolor{keyword}{True}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00225}00225\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}Operações\ com\ Listas:"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00226}00226\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}1.\ Filtrar\ Pares"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00227}00227\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}2.\ Calcular\ Frequência"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00228}00228\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}3.\ Agrupar\ por\ Tamanho"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00229}00229\ \ \ \ \ \ \ \ \ opcao\ =\ input(\textcolor{stringliteral}{"{}Digite\ a\ opção\ desejada:\ "{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00230}00230\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ opcao\ <\ \textcolor{stringliteral}{"{}1"{}}\ \textcolor{keywordflow}{or}\ opcao\ >\ \textcolor{stringliteral}{"{}3"{}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00231}00231\ \ \ \ \ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}Opção\ inválida.\ Tente\ novamente.\(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00232}00232\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00233}00233\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ int(opcao)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00234}00234\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00235}00235\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00236}\mbox{\hyperlink{namespacemain_a3140e9a5b6a71ffbf498198cfc471b88}{00236}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemain_a3140e9a5b6a71ffbf498198cfc471b88}{main}}():}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00237}00237\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00238}00238\ \textcolor{stringliteral}{\ \ \ \ Função\ principal\ que\ controla\ o\ fluxo\ do\ programa.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00239}00239\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00240}00240\ \textcolor{stringliteral}{\ \ \ \ Esta\ função\ apresenta\ o\ menu\ principal\ e\ direciona\ para\ os\ submenus}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00241}00241\ \textcolor{stringliteral}{\ \ \ \ baseando-\/se\ na\ escolha\ do\ utilizador.\ Executa\ as\ operações}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00242}00242\ \textcolor{stringliteral}{\ \ \ \ solicitadas\ chamando\ as\ funções\ dos\ módulos\ importados\ com\ os}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00243}00243\ \textcolor{stringliteral}{\ \ \ \ parâmetros\ apropriados.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00244}00244\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00245}00245\ \textcolor{stringliteral}{\ \ \ \ :return:\ None}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00246}00246\ \textcolor{stringliteral}{\ \ \ \ :rtype:\ NoneType}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00247}00247\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00248}00248\ \textcolor{stringliteral}{\ \ \ \ :exemplo:}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00249}00249\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00250}00250\ \textcolor{stringliteral}{\ \ \ \ >>>\ main()}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00251}00251\ \textcolor{stringliteral}{\ \ \ \ \#\ Inicia\ o\ programa\ interativo\ com\ menus}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00252}00252\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00253}00253\ \ \ \ \ \textcolor{keywordflow}{while}\ \textcolor{keyword}{True}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00254}00254\ \ \ \ \ \ \ \ \ opcao\_principal\ =\ \mbox{\hyperlink{namespacemain_a212a22164b22943139210e6170ace6d3}{menu}}()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00255}00255\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00256}00256\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ opcao\_principal\ ==\ 1:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00257}00257\ \ \ \ \ \ \ \ \ \ \ \ \ opcao\_matematica\ =\ \mbox{\hyperlink{namespacemain_afe65d6f57fd28ee12974ab42a5391216}{menu\_matematica}}()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00258}00258\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00259}00259\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ opcao\_matematica\ ==\ 1:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00260}00260\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ notas\ =\ \mbox{\hyperlink{namespacemain_a096b9079a98ca5cdac266d8acb5930e3}{pedir\_lista\_floats}}(\textcolor{stringliteral}{"{}Digite\ as\ notas\ separadas\ por\ vírgula:\ "{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00261}00261\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pesos\ =\ \mbox{\hyperlink{namespacemain_a096b9079a98ca5cdac266d8acb5930e3}{pedir\_lista\_floats}}(\textcolor{stringliteral}{"{}Digite\ os\ pesos\ separados\ por\ vírgula:\ "{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00262}00262\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__matematica_af186da3fe6c4d4c65d8e1924460cd35a}{modulo\_matematica.calcular\_media\_ponderada}}(notas,\ pesos))}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00263}00263\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00264}00264\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ opcao\_matematica\ ==\ 2:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00265}00265\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ numeros\ =\ \mbox{\hyperlink{namespacemain_a096b9079a98ca5cdac266d8acb5930e3}{pedir\_lista\_floats}}(\textcolor{stringliteral}{"{}Digite\ os\ números\ separados\ por\ vírgula:\ "{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00266}00266\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__matematica_a652d191aae97832f5f41ca61ea520548}{modulo\_matematica.calcular\_desvio\_padrao}}(numeros))}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00267}00267\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00268}00268\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ opcao\_matematica\ ==\ 3:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00269}00269\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temperatura\ =\ float(input(\textcolor{stringliteral}{"{}Digite\ a\ temperatura:\ "{}}))}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00270}00270\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ escala\_origem\ =\ input(\textcolor{stringliteral}{"{}Digite\ a\ escala\ original\ (C/F/K):\ "{}}).upper()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00271}00271\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ escala\_destino\ =\ input(\textcolor{stringliteral}{"{}Digite\ a\ escala\ de\ destino\ (C/F/K):\ "{}}).upper()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00272}00272\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__matematica_acf1f1a8ec5b7d0e5240e02e267889336}{modulo\_matematica.converter\_temperatura}}(temperatura,\ escala\_origem,\ escala\_destino))}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00273}00273\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00274}00274\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ opcao\_principal\ ==\ 2:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00275}00275\ \ \ \ \ \ \ \ \ \ \ \ \ opcao\_texto\ =\ \mbox{\hyperlink{namespacemain_afe4f0664a9a82298827d05277c3bd478}{menu\_texto}}()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00276}00276\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00277}00277\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ opcao\_texto\ ==\ 1:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00278}00278\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ texto\ =\ input(\textcolor{stringliteral}{"{}Digite\ o\ texto:\ "{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00279}00279\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__texto_a7dda877aaf07eeab8dd35740f4c98912}{modulo\_texto.contar\_vogais}}(texto))}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00280}00280\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00281}00281\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ opcao\_texto\ ==\ 2:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00282}00282\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ texto\ =\ input(\textcolor{stringliteral}{"{}Digite\ o\ texto:\ "{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00283}00283\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__texto_a3c1a004ed3c87127d6fa66fc9a117c59}{modulo\_texto.gerar\_acronimo}}(texto))}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00284}00284\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00285}00285\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ opcao\_texto\ ==\ 3:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00286}00286\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ texto\ =\ input(\textcolor{stringliteral}{"{}Digite\ o\ texto:\ "{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00287}00287\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ deslocamento\ =\ int(input(\textcolor{stringliteral}{"{}Digite\ o\ deslocamento:\ "{}}))}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00288}00288\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__texto_a555b51889a8807ed5ec58e878493324a}{modulo\_texto.criptografar\_cesar}}(texto,\ deslocamento))}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00289}00289\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00290}00290\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ opcao\_principal\ ==\ 3:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00291}00291\ \ \ \ \ \ \ \ \ \ \ \ \ opcao\_lista\ =\ \mbox{\hyperlink{namespacemain_ad054726c7900430f5135b3e811943cff}{menu\_lista}}()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00292}00292\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00293}00293\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ opcao\_lista\ ==\ 1:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00294}00294\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ lista\ =\ \mbox{\hyperlink{namespacemain_a7cbc578a29c881ec101cc6d95992861f}{pedir\_lista\_inteiros}}(\textcolor{stringliteral}{"{}Digite\ os\ números\ separados\ por\ vírgula:\ "{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00295}00295\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__lista_a3746a7c1606fa9f453a4a5310a174d0a}{modulo\_lista.filtrar\_pares}}(lista))}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00296}00296\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00297}00297\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ opcao\_lista\ ==\ 2:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00298}00298\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ lista\ =\ \mbox{\hyperlink{namespacemain_a9b32af4b3d241a47dfc5e6fdaf2fccfd}{pedir\_lista}}(\textcolor{stringliteral}{"{}Digite\ a\ lista\ de\ itens\ separados\ por\ vírgula:\ "{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00299}00299\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__lista_a47d2682265f4c633e30c3d5a29284f34}{modulo\_lista.calcular\_frequencia}}(lista))}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00300}00300\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00301}00301\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ opcao\_lista\ ==\ 3:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00302}00302\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ lista\ =\ \mbox{\hyperlink{namespacemain_a9b32af4b3d241a47dfc5e6fdaf2fccfd}{pedir\_lista}}(\textcolor{stringliteral}{"{}Digite\ a\ lista\ de\ strings\ separados\ por\ vírgula:\ "{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00303}00303\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__lista_ae58ec950a1cb67835e9f72d5e34d1e28}{modulo\_lista.agrupar\_por\_tamanho}}(lista))}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00304}00304\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00305}00305\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ opcao\_principal\ ==\ 4:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00306}00306\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00307}00307\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00308}00308\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00309}00309\ \textcolor{keywordflow}{if}\ \_\_name\_\_\ ==\ \textcolor{stringliteral}{"{}\_\_main\_\_"{}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00310}00310\ \ \ \ \ \mbox{\hyperlink{namespacemain}{main}}()}
+
+\end{DoxyCode}

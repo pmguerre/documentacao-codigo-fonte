@@ -1,0 +1,43 @@
+\doxysection{modulo\+\_\+texto.\+py}
+\hypertarget{modulo__texto_8py_source}{}\label{modulo__texto_8py_source}\index{C:/Users/pmguerre/src/documentar/src/modulo\_texto.py@{C:/Users/pmguerre/src/documentar/src/modulo\_texto.py}}
+\mbox{\hyperlink{modulo__texto_8py}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00001}\mbox{\hyperlink{namespacemodulo__texto_a7dda877aaf07eeab8dd35740f4c98912}{00001}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemodulo__texto_a7dda877aaf07eeab8dd35740f4c98912}{contar\_vogais}}(texto):}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00002}00002\ \ \ \ \ vogais\ =\ \textcolor{stringliteral}{"{}aeiou"{}}}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00003}00003\ \ \ \ \ quantidade\ =\ 0}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00004}00004\ \ \ \ \ \textcolor{keywordflow}{for}\ caractere\ \textcolor{keywordflow}{in}\ texto.lower():}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00005}00005\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ caractere\ \textcolor{keywordflow}{in}\ vogais:}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00006}00006\ \ \ \ \ \ \ \ \ \ \ \ \ quantidade\ +=\ 1}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00007}00007\ \ \ \ \ \textcolor{keywordflow}{return}\ quantidade}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00010}\mbox{\hyperlink{namespacemodulo__texto_a3c1a004ed3c87127d6fa66fc9a117c59}{00010}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemodulo__texto_a3c1a004ed3c87127d6fa66fc9a117c59}{gerar\_acronimo}}(texto):}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00011}00011\ \ \ \ \ palavras\ =\ texto.split()}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00012}00012\ \ \ \ \ acronimo\ =\ \textcolor{stringliteral}{"{}"{}}}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00013}00013\ \ \ \ \ \textcolor{keywordflow}{for}\ palavra\ \textcolor{keywordflow}{in}\ palavras:}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00014}00014\ \ \ \ \ \ \ \ \ acronimo\ +=\ palavra[0].upper()}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00015}00015\ \ \ \ \ \textcolor{keywordflow}{return}\ acronimo}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00018}\mbox{\hyperlink{namespacemodulo__texto_a555b51889a8807ed5ec58e878493324a}{00018}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemodulo__texto_a555b51889a8807ed5ec58e878493324a}{criptografar\_cesar}}(texto,\ deslocamento):}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00019}00019\ \ \ \ \ resultado\ =\ \textcolor{stringliteral}{"{}"{}}}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00020}00020\ \ \ \ \ \textcolor{keywordflow}{for}\ caractere\ \textcolor{keywordflow}{in}\ texto:}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00021}00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ caractere.isalpha():}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ base\ =\ ord(\textcolor{stringliteral}{'a'})\ \textcolor{keywordflow}{if}\ caractere.islower()\ \textcolor{keywordflow}{else}\ ord(\textcolor{stringliteral}{'A'})}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ novo\_caractere\ =\ chr((ord(caractere)\ -\/\ base\ +\ deslocamento)\ \%\ 26\ +\ base)}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ novo\_caractere\ =\ caractere}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00026}00026\ \ \ \ \ \ \ \ \ resultado\ +=\ novo\_caractere}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00027}00027\ \ \ \ \ \textcolor{keywordflow}{return}\ resultado}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00030}00030\ \textcolor{keywordflow}{if}\ \_\_name\_\_\ ==\ \textcolor{stringliteral}{"{}\_\_main\_\_"{}}:}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00031}00031\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00032}\mbox{\hyperlink{namespacemodulo__texto_a6237ac8332a42fc4b4b89b0b9796cecf}{00032}}\ \ \ \ \ mensagem\ =\ \textcolor{stringliteral}{"{}As\ armas\ e\ os\ barões\ assinalados,"{}}}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00033}00033\ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__texto_a7dda877aaf07eeab8dd35740f4c98912}{contar\_vogais}}(mensagem))}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00034}00034\ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__texto_a3c1a004ed3c87127d6fa66fc9a117c59}{gerar\_acronimo}}(mensagem))}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00035}\mbox{\hyperlink{namespacemodulo__texto_a21edd410d07b3bf038f190e3adb1f5a7}{00035}}\ \ \ \ \ cifrado\ =\ \mbox{\hyperlink{namespacemodulo__texto_a555b51889a8807ed5ec58e878493324a}{criptografar\_cesar}}(mensagem,\ 3)}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00036}00036\ \ \ \ \ print(cifrado)}
+\DoxyCodeLine{\Hypertarget{modulo__texto_8py_source_l00037}00037\ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__texto_a555b51889a8807ed5ec58e878493324a}{criptografar\_cesar}}(cifrado,\ -\/3))}
+
+\end{DoxyCode}

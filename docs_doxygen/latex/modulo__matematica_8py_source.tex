@@ -1,0 +1,56 @@
+\doxysection{modulo\+\_\+matematica.\+py}
+\hypertarget{modulo__matematica_8py_source}{}\label{modulo__matematica_8py_source}\index{C:/Users/pmguerre/src/documentar/src/modulo\_matematica.py@{C:/Users/pmguerre/src/documentar/src/modulo\_matematica.py}}
+\mbox{\hyperlink{modulo__matematica_8py}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00001}\mbox{\hyperlink{namespacemodulo__matematica_af186da3fe6c4d4c65d8e1924460cd35a}{00001}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemodulo__matematica_af186da3fe6c4d4c65d8e1924460cd35a}{calcular\_media\_ponderada}}(notas,\ pesos):}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00002}00002\ \ \ \ \ \textcolor{keywordflow}{if}\ len(notas)\ !=\ len(pesos):}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00003}00003\ \ \ \ \ \ \ \ \ msg\ =\ \textcolor{stringliteral}{"{}A\ quantidade\ de\ notas\ deve\ ser\ igual\ à\ quantidade\ de\ pesos"{}}}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00004}00004\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{raise}\ ValueError(msg)}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00005}00005\ \ \ \ \ soma\_ponderada\ =\ 0}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00006}00006\ \ \ \ \ \textcolor{keywordflow}{for}\ nota,\ peso\ \textcolor{keywordflow}{in}\ zip(notas,\ pesos):}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00007}00007\ \ \ \ \ \ \ \ \ soma\_ponderada\ +=\ nota\ *\ peso}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00008}00008\ \ \ \ \ soma\_pesos\ =\ sum(pesos)}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00009}00009\ \ \ \ \ \textcolor{keywordflow}{if}\ soma\_pesos\ ==\ 0:}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00010}00010\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{raise}\ ValueError(\textcolor{stringliteral}{"{}A\ soma\ dos\ pesos\ não\ pode\ ser\ zero."{}})}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00011}00011\ \ \ \ \ \textcolor{keywordflow}{return}\ soma\_ponderada\ /\ soma\_pesos}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00014}\mbox{\hyperlink{namespacemodulo__matematica_a652d191aae97832f5f41ca61ea520548}{00014}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemodulo__matematica_a652d191aae97832f5f41ca61ea520548}{calcular\_desvio\_padrao}}(numeros):}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00015}00015\ \ \ \ \ n\ =\ len(numeros)}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00016}00016\ \ \ \ \ \textcolor{keywordflow}{if}\ n\ <\ 2:}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00017}00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{raise}\ ValueError(\textcolor{stringliteral}{"{}A\ lista\ deve\ conter\ pelo\ menos\ dois\ números."{}})}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00018}00018\ \ \ \ \ media\ =\ sum(numeros)\ /\ n}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00019}00019\ \ \ \ \ numerador\ =\ 0}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00020}00020\ \ \ \ \ \textcolor{keywordflow}{for}\ x\ \textcolor{keywordflow}{in}\ numeros:}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00021}00021\ \ \ \ \ \ \ \ \ numerador\ +=\ (x\ -\/\ media)\ **\ 2}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00022}00022\ \ \ \ \ desvio\_padrao\ =\ (numerador\ /\ (n\ -\/\ 1))\ **\ 0.5}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00023}00023\ \ \ \ \ \textcolor{keywordflow}{return}\ desvio\_padrao}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00026}\mbox{\hyperlink{namespacemodulo__matematica_acf1f1a8ec5b7d0e5240e02e267889336}{00026}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemodulo__matematica_acf1f1a8ec5b7d0e5240e02e267889336}{converter\_temperatura}}(temperatura,\ escala\_origem,\ escala\_destino):}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00027}00027\ \ \ \ \ \textcolor{keywordflow}{if}\ escala\_origem\ ==\ \textcolor{stringliteral}{"{}C"{}}\ \textcolor{keywordflow}{and}\ escala\_destino\ ==\ \textcolor{stringliteral}{"{}F"{}}:}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (temperatura\ *\ 9/5)\ +\ 32}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00029}00029\ \ \ \ \ \textcolor{keywordflow}{elif}\ escala\_origem\ ==\ \textcolor{stringliteral}{"{}C"{}}\ \textcolor{keywordflow}{and}\ escala\_destino\ ==\ \textcolor{stringliteral}{"{}K"{}}:}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ temperatura\ +\ 273.15}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00031}00031\ \ \ \ \ \textcolor{keywordflow}{elif}\ escala\_origem\ ==\ \textcolor{stringliteral}{"{}F"{}}\ \textcolor{keywordflow}{and}\ escala\_destino\ ==\ \textcolor{stringliteral}{"{}C"{}}:}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (temperatura\ -\/\ 32)\ *\ 5/9}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00033}00033\ \ \ \ \ \textcolor{keywordflow}{elif}\ escala\_origem\ ==\ \textcolor{stringliteral}{"{}F"{}}\ \textcolor{keywordflow}{and}\ escala\_destino\ ==\ \textcolor{stringliteral}{"{}K"{}}:}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00034}00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (temperatura\ +\ 459.67)\ *\ 5/9}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00035}00035\ \ \ \ \ \textcolor{keywordflow}{elif}\ escala\_origem\ ==\ \textcolor{stringliteral}{"{}K"{}}\ \textcolor{keywordflow}{and}\ escala\_destino\ ==\ \textcolor{stringliteral}{"{}C"{}}:}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ temperatura\ -\/\ 273.15}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00037}00037\ \ \ \ \ \textcolor{keywordflow}{elif}\ escala\_origem\ ==\ \textcolor{stringliteral}{"{}K"{}}\ \textcolor{keywordflow}{and}\ escala\_destino\ ==\ \textcolor{stringliteral}{"{}F"{}}:}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (temperatura\ *\ 9/5)\ -\/\ 459.67}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00039}00039\ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00040}00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{raise}\ ValueError(\textcolor{stringliteral}{"{}Escalas\ inválidas\ ou\ conversão\ não\ suportada."{}})}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00043}00043\ \textcolor{keywordflow}{if}\ \_\_name\_\_\ ==\ \textcolor{stringliteral}{'\_\_main\_\_'}:}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00045}\mbox{\hyperlink{namespacemodulo__matematica_a1b4ad65ecc49c50868bfa8ac2f4f9f94}{00045}}\ \ \ \ \ a\ =\ [10,\ 15,\ 20]}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00046}\mbox{\hyperlink{namespacemodulo__matematica_afed2ee8764fa829992a37fc9dcbaed97}{00046}}\ \ \ \ \ b\ =\ [0.5,\ 0.25,\ 0.25]}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00048}00048\ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__matematica_af186da3fe6c4d4c65d8e1924460cd35a}{calcular\_media\_ponderada}}(a,[1,1]))}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00049}00049\ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__matematica_a652d191aae97832f5f41ca61ea520548}{calcular\_desvio\_padrao}}(a))}
+\DoxyCodeLine{\Hypertarget{modulo__matematica_8py_source_l00050}00050\ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__matematica_acf1f1a8ec5b7d0e5240e02e267889336}{converter\_temperatura}}(32,\ \textcolor{stringliteral}{"{}C"{}},\ \textcolor{stringliteral}{"{}F"{}}))}
+
+\end{DoxyCode}

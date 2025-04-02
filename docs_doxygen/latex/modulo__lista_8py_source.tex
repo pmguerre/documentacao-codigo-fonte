@@ -1,0 +1,40 @@
+\doxysection{modulo\+\_\+lista.\+py}
+\hypertarget{modulo__lista_8py_source}{}\label{modulo__lista_8py_source}\index{C:/Users/pmguerre/src/documentar/src/modulo\_lista.py@{C:/Users/pmguerre/src/documentar/src/modulo\_lista.py}}
+\mbox{\hyperlink{modulo__lista_8py}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00001}\mbox{\hyperlink{namespacemodulo__lista_a3746a7c1606fa9f453a4a5310a174d0a}{00001}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemodulo__lista_a3746a7c1606fa9f453a4a5310a174d0a}{filtrar\_pares}}(lista\_numeros):}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00002}00002\ \ \ \ \ numeros\ =\ []}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00003}00003\ \ \ \ \ \textcolor{keywordflow}{for}\ numero\ \textcolor{keywordflow}{in}\ lista\_numeros:}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00004}00004\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ numero\ \%\ 2\ ==\ 0:}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00005}00005\ \ \ \ \ \ \ \ \ \ \ \ \ numeros.append(numero)}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00006}00006\ \ \ \ \ \textcolor{keywordflow}{return}\ numeros}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00009}\mbox{\hyperlink{namespacemodulo__lista_a47d2682265f4c633e30c3d5a29284f34}{00009}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemodulo__lista_a47d2682265f4c633e30c3d5a29284f34}{calcular\_frequencia}}(lista):}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00010}00010\ \ \ \ \ frequencia\ =\ \{\}}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00011}00011\ \ \ \ \ \textcolor{keywordflow}{for}\ item\ \textcolor{keywordflow}{in}\ lista:}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00012}00012\ \ \ \ \ \ \ \ \ frequencia[item]\ =\ frequencia.get(item,\ 0)\ +\ 1}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00013}00013\ \ \ \ \ \textcolor{keywordflow}{return}\ frequencia}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00016}\mbox{\hyperlink{namespacemodulo__lista_ae58ec950a1cb67835e9f72d5e34d1e28}{00016}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacemodulo__lista_ae58ec950a1cb67835e9f72d5e34d1e28}{agrupar\_por\_tamanho}}(lista\_strings):}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00017}00017\ \ \ \ \ agrupado\ =\ \{\}}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00018}00018\ \ \ \ \ \textcolor{keywordflow}{for}\ string\ \textcolor{keywordflow}{in}\ lista\_strings:}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00019}00019\ \ \ \ \ \ \ \ \ tamanho\ =\ len(string)}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ tamanho\ \textcolor{keywordflow}{not}\ \textcolor{keywordflow}{in}\ agrupado:}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ agrupado[tamanho]\ =\ []}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00022}00022\ \ \ \ \ \ \ \ \ agrupado[tamanho].append(string)}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00023}00023\ \ \ \ \ \textcolor{keywordflow}{return}\ agrupado}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00026}00026\ \textcolor{keywordflow}{if}\ \_\_name\_\_\ ==\ \textcolor{stringliteral}{"{}\_\_main\_\_"{}}:}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00027}00027\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00028}\mbox{\hyperlink{namespacemodulo__lista_aa317d75910737c3e2ffbd8deafe041ef}{00028}}\ \ \ \ \ numeros\ =\ [1,\ 4,\ 7,\ 3,\ 8,\ 10,\ 24,\ 1,\ 5,\ 7,\ 10]}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00029}\mbox{\hyperlink{namespacemodulo__lista_af2dcac2562f7fa1923b3a582e4bba13c}{00029}}\ \ \ \ \ strings\ =\ [\textcolor{stringliteral}{'ola'},\ \textcolor{stringliteral}{'mundo'},\ \textcolor{stringliteral}{'maria'},\ \textcolor{stringliteral}{'xutos'},\ \textcolor{stringliteral}{'colaboração'},\ \textcolor{stringliteral}{'a'},\ \textcolor{stringliteral}{'e'},\ \textcolor{stringliteral}{'xutos'}]}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00030}00030\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00031}00031\ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__lista_a3746a7c1606fa9f453a4a5310a174d0a}{filtrar\_pares}}(numeros))}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00032}00032\ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__lista_a47d2682265f4c633e30c3d5a29284f34}{calcular\_frequencia}}(numeros))}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00033}00033\ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__lista_a47d2682265f4c633e30c3d5a29284f34}{calcular\_frequencia}}(strings))}
+\DoxyCodeLine{\Hypertarget{modulo__lista_8py_source_l00034}00034\ \ \ \ \ print(\mbox{\hyperlink{namespacemodulo__lista_ae58ec950a1cb67835e9f72d5e34d1e28}{agrupar\_por\_tamanho}}(strings))}
+
+\end{DoxyCode}
