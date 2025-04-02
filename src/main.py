@@ -24,7 +24,9 @@ módulos importados.
 :Versão: 1.0
 """
 
-from modulos import listas, matematica, textos
+import modulo_lista
+import modulo_matematica
+import modulo_texto
 
 
 def pedir_lista_floats(mensagem):
@@ -266,48 +268,48 @@ def main():
             if opcao_matematica == 1:
                 notas = pedir_lista_floats("Digite as notas separadas por vírgula: ")
                 pesos = pedir_lista_floats("Digite os pesos separados por vírgula: ")
-                print(matematica.calcular_media_ponderada(notas, pesos))
+                print(modulo_matematica.calcular_media_ponderada(notas, pesos))
 
             elif opcao_matematica == 2:
                 numeros = pedir_lista_floats("Digite os números separados por vírgula: ")
-                print(matematica.calcular_desvio_padrao(numeros))
+                print(modulo_matematica.calcular_desvio_padrao(numeros))
 
             elif opcao_matematica == 3:
                 temperatura = float(input("Digite a temperatura: "))
                 escala_origem = input("Digite a escala original (C/F/K): ").upper()
                 escala_destino = input("Digite a escala de destino (C/F/K): ").upper()
-                print(matematica.converter_temperatura(temperatura, escala_origem, escala_destino))
+                print(modulo_matematica.converter_temperatura(temperatura, escala_origem, escala_destino))
 
         elif opcao_principal == 2:
             opcao_texto = menu_texto()
 
             if opcao_texto == 1:
                 texto = input("Digite o texto: ")
-                print(textos.contar_vogais(texto))
+                print(modulo_texto.contar_vogais(texto))
 
             elif opcao_texto == 2:
                 texto = input("Digite o texto: ")
-                print(textos.gerar_acronimo(texto))
+                print(modulo_texto.gerar_acronimo(texto))
 
             elif opcao_texto == 3:
                 texto = input("Digite o texto: ")
                 deslocamento = int(input("Digite o deslocamento: "))
-                print(textos.criptografar_cesar(texto, deslocamento))
+                print(modulo_texto.criptografar_cesar(texto, deslocamento))
 
         elif opcao_principal == 3:
             opcao_lista = menu_lista()
 
             if opcao_lista == 1:
                 lista = pedir_lista_inteiros("Digite os números separados por vírgula: ")
-                print(listas.filtrar_pares(lista))
+                print(modulo_lista.filtrar_pares(lista))
 
             elif opcao_lista == 2:
                 lista = pedir_lista("Digite a lista de itens separados por vírgula: ")
-                print(listas.calcular_frequencia(lista))
+                print(modulo_lista.calcular_frequencia(lista))
 
             elif opcao_lista == 3:
                 lista = pedir_lista("Digite a lista de strings separados por vírgula: ")
-                print(listas.agrupar_por_tamanho(lista))
+                print(modulo_lista.agrupar_por_tamanho(lista))
 
         elif opcao_principal == 4:
             break
